@@ -1,36 +1,34 @@
-# kbds_var_mod
-h1.King's Bounty Dark Side - Variation Mod
-
+# King's Bounty Dark Side - Variation Mod
 Mod by Dmitry "AmDDRed" Prigodich to tryout King's Bounty modding and modify few positions in the game's balance.
 
-h2.Initial Goals
+## Initial Goals
 1. Make undead poison immune;
 2. Make undead bleed immune;
 3. Make undead morale neutral;
 4. Make demons hot-resistant; (if not already)
 
-h2.Knowledge Base
-- *.kfs is a simple .zip archive, opened by any archive manager, like 7Zip or WinRar;
-- /data/data.kfs - contains unit data and a lot of other stuff, some additional units may be found in ses.kfs archive;
-- /sessions/darkside/loc_ses.kfs/<lng>_units.lng - contains unit names, single (cpn_*) or plural (cpsn_*); these names could be used to find unit config (*.atom);
-- /sessions/darkside/loc_ses*.kfs/<lng>_units_features.lng - contains strings for features_label, features_hints for unit's .atom's;
-- /sessions/darkside/ses.kfs/logic.txt - contains all feature list, not added automatically to the unit description;
-- /sessions/darkside/ses.kfs/hero.txt - starting settings for heroes;
-- /sessions/darkside/ses.kfs/logic_hero.lua - update settings for heroes;
+## Knowledge Base
+- `*.kfs` is a simple .zip archive, opened by any archive manager, like 7Zip or WinRar;
+- `/data/data.kfs` - contains unit data and a lot of other stuff, some additional units may be found in ses.kfs archive;
+- `/sessions/darkside/loc_ses.kfs/<lng>_units.lng` - contains unit names, single (`cpn_*`) or plural (`cpsn_*`); these names could be used to find unit config (`*.atom`);
+- `/sessions/darkside/loc_ses*.kfs/<lng>_units_features.lng` - contains strings for features_label, features_hints for unit's .atom's;
+- `/sessions/darkside/ses.kfs/logic.txt` - contains all feature list, not added automatically to the unit description;
+- `/sessions/darkside/ses.kfs/hero.txt` - starting settings for heroes;
+- `/sessions/darkside/ses.kfs/logic_hero.lua` - update settings for heroes;
 
-h2. Features
-resistances=
-    physical,poison,magic,fire,glacial,astral
-features=
-    armor,shot,mage,undead,eyeless,demon,dragon,plant,mind_immunitet,fire_immunitet,magic_immunitet,poison_immunitet,freeze_immunitet,holy,bone,golem,humanoid,beast,nonecro,barrier,archer,boss,pawn,orb,mech,summoned_creature,rune_knowledge,ice_creature,light_step,ghost,light,dark
+## Features
+- resistances=
+> physical,poison,magic,fire,glacial,astral
 
+- features=
+> armor,shot,mage,undead,eyeless,demon,dragon,plant,mind_immunitet,fire_immunitet,magic_immunitet,poison_immunitet,freeze_immunitet,holy,bone,golem,humanoid,beast,nonecro,barrier,archer,boss,pawn,orb,mech,summoned_creature,rune_knowledge,ice_creature,light_step,ghost,light,dark
 
-h2.Units
+## Units
 Information for fast access.
 
-h3.Undeads
-| lvl   | orig_name         | upd_name                | имя                     | path              |
---------------------------------------------------------------------------------------------
+### Undeads
+| lvl   | orig_name         | good_to_be_name         | имя                     | path              |
+| ----- | ----------------- | ----------------------- | ----------------------- | ----------------- |
 | 1     | spider_undead     | undead_spider           | Мёртвый паук            | ./data/data.kfs   |
 | 1     | skeleton          | undead_skeleton         | Скелет                  | ./data/data.kfs   |
 | 1     | archer            | undead_archer           | Скелет-лучник           | ./data/data.kfs   |
@@ -49,9 +47,9 @@ h3.Undeads
 | 4     | necromant         | undead_necromancer      | Некромант               | ./data/data.kfs   |
 | 5     | bonedragon        | undead_bone_dragon      | Костяной дракон         | ./data/data.kfs   |
 
-h3.Demons
-| lvl   | orig_name         | upd_name               | имя                   | path              |
------------------------------------------------------------------------------------------
+### Demons
+| lvl   | orig_name         | good_to_be_name         | имя                     | path              |
+| ----- | ----------------- | ----------------------- | ----------------------- | ----------------- |
 | 1     | firemental        | demons_fire_elemental  | Огненный элементаль   | ./session/darkside/ses.kfs |
 | 1     | imp               | demons_imp             | Имп                   | ./data/data.kfs   |
 | 1     | imp2              | demons_imp2            | Имп-насмешник         | ./data/data.kfs   |
@@ -62,9 +60,9 @@ h3.Demons
 | 1     | demon2            | demons_demon2          | Палач                 | ./data/data.kfs   |
 | 1     | archdemon         | demons_archdemon       | Архидемон             | ./data/data.kfs   |
 
-h3.Orcs
-| lvl   | orig_name         | upd_name              | имя                   | path              |
-----------------------------------------------------------------------------------------
+### Orcs
+| lvl   | orig_name         | good_to_be_name         | имя                     | path              |
+| ----- | ----------------- | ----------------------- | ----------------------- | ----------------- |
 | 1     | goblin            | orcs_goblin           | Гоблин                | ./data/data.kfs   |
 | 1     | goblin2           | orcs_goblin2          | Неистовый гоблин      | ./data/data.kfs   |
 | 1     | goblin_rider      | orcs_goblin_rider     | Говорящий с духами    | ./session/darkside/ses.kfs |
