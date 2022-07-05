@@ -1,17 +1,19 @@
 # King's Bounty Dark Side - Variation Mod
-Mod by Dmitry "AmDDRed" Prigodich to tryout King's Bounty modding and modify few positions in the game's balance.
+ Mod by Dmitry "AmDDRed" Prigodich to tryout King's Bounty modding and modify few positions in the game's balance.
 
 ## Initial Goals
 1. Make undead poison immune;
 2. Make undead bleed immune;
 3. Make undead morale neutral;
 4. Make demons hot-resistant; (if not already)
+5. Add all 1-2 level units for orcs, demons, undead to the base
 
 ## Knowledge Base
 - `*.kfs` is a simple .zip archive, opened by any archive manager, like 7Zip or WinRar;
-- `/data/data.kfs` - contains unit data and a lot of other stuff, some additional units may be found in ses.kfs archive;
+- `/data/data.kfs` - contains unit data and a lot of other stuff, some new additional units may be found in ses.kfs archive;
 - `/sessions/darkside/loc_ses.kfs/<lng>_units.lng` - contains unit names, single (`cpn_*`) or plural (`cpsn_*`); these names could be used to find unit config (`*.atom`);
 - `/sessions/darkside/loc_ses*.kfs/<lng>_units_features.lng` - contains strings for features_label, features_hints for unit's .atom's;
+- `/sessions/darkside/loc_ses*.kfs/<lng>_windows.lng` - UI localization, possible to add mod naming, for example, in `start_version=`;
 - `/sessions/darkside/ses.kfs/logic.txt` - contains all feature list, not added automatically to the unit description;
 - `/sessions/darkside/ses.kfs/hero.txt` - starting settings for heroes;
 - `/sessions/darkside/ses.kfs/logic_hero.lua` - update settings for heroes;
@@ -27,14 +29,14 @@ Mod by Dmitry "AmDDRed" Prigodich to tryout King's Bounty modding and modify few
 Information for fast access.
 
 ### Undeads
-| lvl   | orig_name         | good_to_be_name         | имя                     | path              |
-| ----- | ----------------- | ----------------------- | ----------------------- | ----------------- |
+| lvl   | orig_name         | good_to_be_name         | имя                     | path |
+| - | - | - | - | - |
 | 1     | spider_undead     | undead_spider           | Мёртвый паук            | ./data/data.kfs   |
 | 1     | skeleton          | undead_skeleton         | Скелет                  | ./data/data.kfs   |
-| 1     | archer            | undead_archer           | Скелет-лучник           | ./data/data.kfs   |
+| 1     | archer            | undead_skeleton_archer  | Скелет-лучник           | ./data/data.kfs   |
 | 2     | zombie            | undead_zombie           | Зомби                   | ./data/data.kfs   |
 | 2     | zombie2           | undead_zombie2          | Гниющий зомби           | ./data/data.kfs   |
-| 3     | pirat_ghost       | undead_pirate_ghost     | Пират-призрак           | ./data/data.kfs   |
+| 3     | pirat_ghost       | undead_ghost_pirate     | Пират-призрак           | ./data/data.kfs   |
 | 3     | ghost             | undead_ghost            | Привидение              | ./data/data.kfs   |
 | 3     | ghost2            | undead_ghost2           | Проклятое привидение    | ./data/data.kfs   |
 | 3     | vampire_woman     | undead_vampiress        | Вампиресса              | ./session/darkside/ses.kfs |
@@ -50,15 +52,15 @@ Information for fast access.
 ### Demons
 | lvl   | orig_name         | good_to_be_name         | имя                     | path              |
 | ----- | ----------------- | ----------------------- | ----------------------- | ----------------- |
-| 1     | firemental        | demons_fire_elemental  | Огненный элементаль   | ./session/darkside/ses.kfs |
-| 1     | imp               | demons_imp             | Имп                   | ./data/data.kfs   |
-| 1     | imp2              | demons_imp2            | Имп-насмешник         | ./data/data.kfs   |
-| 1     | cerberus          | demons_cerberus        | Цербер                | ./data/data.kfs   |
-| 1     | priestess_blood   | demons_blood_priestess | Жрица Крови           | ./session/darkside/ses.kfs |
-| 1     | demoness          | demons_demoness        | Демонесса             | ./data/data.kfs   |
-| 1     | demon             | demons_demon           | Демон                 | ./data/data.kfs   |
-| 1     | demon2            | demons_demon2          | Палач                 | ./data/data.kfs   |
-| 1     | archdemon         | demons_archdemon       | Архидемон             | ./data/data.kfs   |
+| 2     | imp               | demons_imp             | Имп                   | ./data/data.kfs   |
+| 2     | imp2              | demons_imp2            | Имп-насмешник         | ./data/data.kfs   |
+| 3     | cerberus          | demons_cerberus        | Цербер                | ./data/data.kfs   |
+| 3     | firemental        | demons_fire_elemental  | Огненный элементаль   | ./data/data.kfs   |
+| 3     | priestess_blood   | demons_blood_priestess | Жрица Крови           | ./session/darkside/ses.kfs |
+| 4     | demoness          | demons_demoness        | Демонесса             | ./data/data.kfs   |
+| 4     | demon             | demons_demon           | Демон                 | ./data/data.kfs   |
+| 4     | demon2            | demons_demon2          | Палач                 | ./data/data.kfs   |
+| 5     | archdemon         | demons_archdemon       | Архидемон             | ./data/data.kfs   |
 
 ### Orcs
 | lvl   | orig_name         | good_to_be_name         | имя                     | path              |
