@@ -2,11 +2,16 @@
  Mod by Dmitry "AmDDRed" Prigodich to tryout King's Bounty modding and modify few positions in the game's balance.
 
 ## Initial Goals
-1. Make undead poison immune;
-2. Make undead bleed immune;
-3. Make undead morale neutral;
-4. Make demons hot-resistant; (if not already)
-5. Add all 1-2 level units for orcs, demons, undead to the base
+0. [ ] Create some basic documentation
+1. [ ] Make undead poison immune;
+2. [ ] Make undead bleed immune;
+3. [ ] Make undead morale neutral;
+4. [ ] Make demons hot-resistant; (if not already)
+5. [ ] Add all 1-2 level units for orcs, demons, undead to the base
+6. [ ] Update skeleton.atom with receiver=bones function
+7. [ ] Update ghosts with blend=0.85 function
+8. [ ] Update fire_elementals from undead roots
+9. [ ] Update inferno_dragon with model{1=phoenixash.bma}?
 
 ## Knowledge Base
 - `*.kfs` is a simple .zip archive, opened by any archive manager, like 7Zip or WinRar;
