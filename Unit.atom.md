@@ -34,40 +34,40 @@ prefetch{}
 ```
 
 ### Main{}
-| name                  | type      | values            | example                   | description  |
-| -                     | :-:       | -                 | -                         | - |
-| main.class            | string    | see below         | chesspiece                | common; game object type |
-| main.model            | string    | *.bma             | chosha.bma                | common; model to use |
-| main.spawnscale       | double    | 0-x?              | 1.01                      | common; model scale to use |
-| main.colmesh          | string    | collision_*.cms   | collision_alchemist.cms   | common; collision mesh to use |
-| main.cullcat          | int       | 0-10              | 0                         | common; usage not clear; for chesspiece is 0 |
-| main.blend            | double    | 0-1 (?)           | 0.85                      | common; allows model to be transparent |
-| main.bboxanim         | boolean   | true/false or 0/1 | 1                         | common; usage not clear; big_box_animation? |
-| main.nodimming        | boolean   | true/false or 0/1 | true                      | common; usage not clear; found for orb(1|2|3); |
-| main.norndframe       | boolean   | true/false or 0/1 | 1                         | chesspiece, dynamic; usage not clear; found for orb(1|2|3), fxm_water_spurt_cast, ui_sounds |
-| main.receiver         | string    | bones             | bones                     | chesspiece; usage not clear; found for skeleton-type units, including infernodragon(1|2|3)  |
-| main.hitdist          | int       | 0-x?              | 10                        | chesspiece; found for catapult only; probably, limits hit distance |
-| main.apass            | int       | 2,3               | 2                         | common; the delay between actions?  |
-| main.infobox.msgbox   | string    | ?                 | ?                         |  |
-| main.infobox.hint     | string    | ?                 | ?                         |  |
-| main.aggro_sound      | string    | ?                 | demon_aggro               | army; sound for attacking hero on map |
-| main.minimap_pic_size | string    | ?                 | BIG                       | army; minimap dot size |
-| main.minimap_pic_type | string    | ?                 | FRIEND                    | army; minimap dot color |
-| main.turn_speed       | double    | ?                 | 1.5                       | army; hero turning speed |
-| main.walk_speed       | double?   | ?                 | 1                         | army; hero walking speed |
-| main.run_speed        | double?   | ?                 | 4                         | army; hero running speed |
-| main.selfdestruct     | int       | 0-1               | 1                         | common; in how many turns this object will disappear |
-| main.cursor           | string    | ?                 | take                      | army; cursor form on hover |
-| main.lutemplate       | string    | ?                 | template_item_mb          | army; usage not clear |
-| main.ttl              | int       | 0                 | 0                         | - |
-| main.speed            | int       | 0-x               | 20                        | - |
-| main.mapicon          | int       | 0-x               | 20                        | - |
-| main.radar_radius     | int       | 0-x               | 20                        | - |
-| main.decal            | int       | 0-x               | 20                        | - |
-| main.instanced        | int       | 0-x               | 20                        | - |
-| main.ttl              | int       | 0-x               | 20                        | - |
-| main.addangle         | int       | 0-x               | 20                        | - |
-| main.cooldown         | int       | 0-x               | 20                        | - |
+| name             | type      | values            | example                   | location              | description  |
+| ---------------- | --------- | ----------------- | ------------------------- | --------------------- | ------------ |
+| class            | string    | see below         | chesspiece                | common                | game object type |
+| model            | string    | *.bma             | chosha.bma                | common                | model to use |
+| spawnscale       | double    | 0-x?              | 1.01                      | common                | model scale to use |
+| colmesh          | string    | collision_*.cms   | collision_alchemist.cms   | common                | collision mesh to use |
+| cullcat          | int       | 0-10              | 0                         | common                | usage not clear; for chesspiece is 0 |
+| blend            | double    | 0-1 (?)           | 0.85                      | common                | allows model to be transparent |
+| bboxanim         | boolean   | true/false or 0/1 | 1                         | common                | usage not clear; big_box_animation? |
+| nodimming        | boolean   | true/false or 0/1 | true                      | common                | usage not clear; found for orb1/2/3; |
+| norndframe       | boolean   | true/false or 0/1 | 1                         | chesspiece, dynamic   | usage not clear; found for orb1/2/3, fxm_water_spurt_cast, ui_sounds |
+| receiver         | string    | bones             | bones                     | chesspiece            | usage not clear; found for skeleton-type units, including infernodragon(1|2|3)  |
+| hitdist          | int       | 0-x?              | 10                        | chesspiece            | found for catapult only; probably, limits hit distance |
+| apass            | int       | 2,3               | 2                         | common                | the delay between actions?  |
+| infobox.msgbox   | string    | ?                 | ?                         |                       ||
+| infobox.hint     | string    | ?                 | ?                         |                       ||
+| aggro_sound      | string    | ?                 | demon_aggro               | army                  | sound for attacking hero on map |
+| minimap_pic_size | string    | ?                 | BIG                       | army                  | minimap dot size |
+| minimap_pic_type | string    | ?                 | FRIEND                    | army                  | minimap dot color |
+| turn_speed       | double    | ?                 | 1.5                       | army                  | hero turning speed |
+| walk_speed       | double?   | ?                 | 1                         | army                  | hero walking speed |
+| run_speed        | double?   | ?                 | 4                         | army                  | hero running speed |
+| selfdestruct     | int       | 0-1               | 1                         | common                | in how many turns this object will disappear |
+| cursor           | string    | ?                 | take                      | army                  | cursor form on hover |
+| lutemplate       | string    | ?                 | template_item_mb          | army                  | usage not clear |
+| ttl              | int       | 0                 | 0                         | -                     ||
+| speed            | int       | 0-x               | 20                        | -                     ||
+| mapicon          | int       | 0-x               | 20                        | -                     ||
+| radar_radius     | int       | 0-x               | 20                        | -                     ||
+| decal            | int       | 0-x               | 20                        | -                     ||
+| instanced        | int       | 0-x               | 20                        | -                     ||
+| ttl              | int       | 0-x               | 20                        | -                     ||
+| addangle         | int       | 0-x               | 20                        | -                     ||
+| cooldown         | int       | 0-x               | 20                        | -                     ||
 
 #### Model
 Example of usage:
